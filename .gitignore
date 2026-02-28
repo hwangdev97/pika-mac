@@ -1,0 +1,5 @@
+pika-mac
+*.exe
+.DS_Store
+dist/
+source_*.mp3
