@@ -1,33 +1,37 @@
 # pika-mac
 
-拍一下 MacBook，皮卡丘就会叫！
+Slap your MacBook, Pikachu responds!
 
 <video src="demo.mp4" controls muted width="300"></video>
 
-利用 Apple Silicon 内置加速度计（Bosch BMI286 IMU）检测拍击，播放皮卡丘音效。需要 `sudo` 权限。
+Detects physical impacts on Apple Silicon MacBooks via the built-in accelerometer (Bosch BMI286 IMU) and plays Pikachu sound effects. Requires `sudo`.
 
-> 本项目灵感来源于 [taigrr/spank](https://github.com/taigrr/spank)，核心的加速度计读取与震动检测算法均来自该项目。pika-mac 将音效替换为皮卡丘主题，并新增了 battle / happy 模式。
+> Inspired by [taigrr/spank](https://github.com/taigrr/spank). The accelerometer access and vibration detection algorithms come from that project. pika-mac replaces the audio with Pikachu-themed sounds and adds battle / happy modes.
 
-## 使用
+## Usage
 
 ```bash
-# 默认模式 — 随机皮卡丘叫声
+# Default mode — random Pikachu cries
 sudo pika-mac
 
-# 战斗模式 — 十万伏特！
+# Battle mode — Thunderbolt!
 sudo pika-mac --battle
 
-# 开心模式 — 拍得越多越开心（5 分钟窗口内升级）
+# Happy mode — the more you slap, the happier Pikachu gets (escalates over a 5-min window)
 sudo pika-mac --happy
 ```
 
-## 构建
+## Build
 
 ```bash
 go build -o pika-mac .
 ```
 
-## 致谢
+## Credits
 
-- [taigrr/spank](https://github.com/taigrr/spank) — 原始项目，提供了加速度计接入与震动检测的完整实现
-- [taigrr/apple-silicon-accelerometer](https://github.com/taigrr/apple-silicon-accelerometer) — Apple Silicon 加速度计库
+- [taigrr/spank](https://github.com/taigrr/spank) — the original project that provides accelerometer access and vibration detection
+- [taigrr/apple-silicon-accelerometer](https://github.com/taigrr/apple-silicon-accelerometer) — Apple Silicon accelerometer library
+
+---
+
+[中文说明](README_CN.md)
