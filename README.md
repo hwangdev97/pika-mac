@@ -2,7 +2,7 @@
 
 Slap your MacBook, Pikachu responds!
 
-<video src="demo.mp4" controls muted width="300"></video>
+<video src="demo.mp4" controls width="300"></video>
 
 Detects physical impacts on Apple Silicon MacBooks via the built-in accelerometer (Bosch BMI286 IMU) and plays Pikachu sound effects. Requires `sudo`.
 
