@@ -2,7 +2,7 @@
 
 拍一下 MacBook，皮卡丘就会叫！
 
-<video src="demo.mp4" controls width="300"></video>
+<video src="https://github.com/hwangdev97/pika-mac/releases/download/assets/export_1772268000098.mp4" controls width="300"></video>
 
 利用 Apple Silicon 内置加速度计（Bosch BMI286 IMU）检测拍击，播放皮卡丘音效。需要 `sudo` 权限。
 
