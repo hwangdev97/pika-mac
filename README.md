@@ -1,37 +1,10 @@
-# pika-mac
+# Pika Mac
 
-Slap your MacBook, Pikachu responds!
+This project is a demo of Pika Mac...  
 
-https://github.com/hwangdev97/pika-mac/releases/download/assets/export_1772268000098.mp4
+## Demo Video
 
-Detects physical impacts on Apple Silicon MacBooks via the built-in accelerometer (Bosch BMI286 IMU) and plays Pikachu sound effects. Requires `sudo`.
+You can view the demo video here:
+[Demo Video](https://github.com/hwangdev97/pika-mac/blob/main/demo.mp4)
 
-> Inspired by [taigrr/spank](https://github.com/taigrr/spank). The accelerometer access and vibration detection algorithms come from that project. pika-mac replaces the audio with Pikachu-themed sounds and adds battle / happy modes.
-
-## Usage
-
-```bash
-# Default mode — random Pikachu cries
-sudo pika-mac
-
-# Battle mode — Thunderbolt!
-sudo pika-mac --battle
-
-# Happy mode — the more you slap, the happier Pikachu gets (escalates over a 5-min window)
-sudo pika-mac --happy
-```
-
-## Build
-
-```bash
-go build -o pika-mac .
-```
-
-## Credits
-
-- [taigrr/spank](https://github.com/taigrr/spank) — the original project that provides accelerometer access and vibration detection
-- [taigrr/apple-silicon-accelerometer](https://github.com/taigrr/apple-silicon-accelerometer) — Apple Silicon accelerometer library
-
----
-
-[中文说明](README_CN.md)
+If the preview does not work, use this raw link: [Raw Demo Video](https://raw.githubusercontent.com/hwangdev97/pika-mac/main/demo.mp4)
